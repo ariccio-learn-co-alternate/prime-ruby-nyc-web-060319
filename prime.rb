@@ -1,9 +1,13 @@
 # Add  code here!
 def prime?(num)
-  for i in (1..num) do
-    for j in (1..(num/2)) do
+  if num < 0
+    return false
+  end
+  
+  for i in (2..num) do
+    for j in (2..num) do
       if (i * j) == num
-        return true
+        return false
       end
     end
   end
