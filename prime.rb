@@ -3,7 +3,9 @@ def prime?(num)
   if num < 0
     return false
   end
-  
+  if num == 2
+    return true
+  end
   for i in (2..num) do
     for j in (2..num) do
       if (i * j) == num
